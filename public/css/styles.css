@@ -1,0 +1,64 @@
+body.text-center {
+  background-color: #232323 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  color: white;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 370px;
+  padding: 25px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-signin input[type="text"],
+#chatrooms {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border: none !important;
+  height: 45px !important;
+  margin-bottom: 15px !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary.btn-block {
+  background-color: #007bff !important;
+  border: none !important;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px !important;
+  transition: background 0.3s ease;
+}
+
+.btn-primary.btn-block:hover {
+  background-color: #0056b3 !important;
+}
+
+.online-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #17ab3a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2px;
+  box-shadow: 0 0 8px #28a745;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

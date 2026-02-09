@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chat Application</title>
+  </head>
+  <body style="background-color: #232323">
+    <div class="container-fluid" style="background-color: #232323">
+      <div
+        class="p-1 mt-0 mb-2 border border-dark"
+        style="border-radius: 10px; background-color: #333"
+      >
+        <ul
+          id="online-users-list"
+          class="list-group list-group-horizontal list-unstyled overflow-auto"
+        ></ul>
+      </div>
+      <div class="row">
+        <div
+          id="chatContainer"
+          class="col-12"
+          style="
+            background-color: #232323;
+            position: absolute;
+            height: 85%;
+            overflow-y: scroll;
+          "
+        >
+          <ul id="chat-box" class="mt-2 list-unstyled"></ul>
+          <div id="feedback"></div>
+          <div class="d-flex justify-content-center fixed-bottom">
+            <form id="chatForm" class="form-group w-50 mb-1">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="message"
+                  id="messageInput"
+                  class="form-control"
+                  style="
+                    height: 45px;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 10px 0 0 10px;
+                  "
+                  placeholder="Text Message..."
+                />
+                <div class="input-group-prepend">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="
+                      height: 45px;
+                      padding: 0 30px;
+                      border-radius: 0 10px 10px 0;
+                    "
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="pvChat"
+      tabindex="-1"
+      aria-labelledby="pvChatModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span class="alert alert-success p-2" id="pvChatMessage"></span>
+          </div>
+          <div class="modal-body">
+            <form id="pvChatForm">
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="pvMessageInput"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/socket.io.min.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
