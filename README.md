@@ -1,4 +1,4 @@
-# Real-Time Chat System
+# 💬 Real-Time Chat System
 
 A functional and responsive messaging system built with **Node.js** and **Socket.io**. This project focuses on managing real-time data flow and organizing user interactions within a structured environment.
 
@@ -18,12 +18,11 @@ A functional and responsive messaging system built with **Node.js** and **Socket
 
 ## 📦 Installation & Setup
 
-1. **Clone the repository**:
+1. **Clone the repo**:
 
-   ```bash
-   git clone [https://github.com/AlirezaSaberian/ChatRoom_NodeJS_Express_SocketIO.git](https://github.com/AlirezaSaberian/ChatRoom_NodeJS_Express_SocketIO.git)
-
-   ```
+```bash
+git clone [https://github.com/AlirezaSaberian/ChatRoom_NodeJS_Express_SocketIO.git](https://github.com/AlirezaSaberian/ChatRoom_NodeJS_Express_SocketIO.git)
+```
 
 2. **Install dependencies**:
 
